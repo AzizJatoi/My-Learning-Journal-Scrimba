@@ -33,12 +33,21 @@ header p {
 header a {
     text-decoration: none;
     color: #090909; 
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding-left: 1em;
     text-align: right;
     font-family: Source sans pro, sans-serif;
     font-style: normal;
     font-weight: 600;
+}
+
+header a:hover {
+    color: #303030; 
+}
+
+header p:hover {
+    color: #3e3c3c; 
+    cursor: pointer;
 }
 
 /* Header / Navigation */
@@ -55,8 +64,15 @@ header a {
     font-family: Source sans pro, sans-serif;
 }
 
+.blog-post-container {
+    padding-top: 10em;
+    padding-bottom: 3em;
+}
+
 .hero-date {
     padding: 5em 5em 0.2em 5em;
+    margin: 0;
+
 }
 
 .hero-title {
@@ -68,13 +84,15 @@ header a {
 .hero-desc {
     font-size: 1.2rem;
     font-weight: lighter;
-    padding: 0em 5em 0em 4.2em;
+    padding: 0em 26em 0em 4.2em;
+    margin: 0;
+
 }
 .read-more {
     color: white;
     text-decoration: underline;
     cursor: pointer;
-    font-size: 2.4rem;
+    font-size: 1.2rem;
 }
 
 /* Hero Article */
@@ -83,14 +101,17 @@ header a {
 /* Main / Sections */
 
 main {
-    margin-top: 30px;
+    margin-top: 4em;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
-    gap: 0.5rem;
-    margin-left: 4em;
+    gap: 1em;
+    margin-left: 5em;
     margin-right: 4em;
 }
 
+.blogs {
+    margin-bottom: 1em;
+}
 .blog-date {
     color: #000;
     font-family: Source Sans Pro;
@@ -121,7 +142,7 @@ main {
 }
 
 .view-more-btn {
-    font-size: 2.5rem;
+    font-size: 2rem;
     padding: 2em;
     background: transparent;
     border: none;
@@ -144,12 +165,60 @@ footer {
 footer > h1{
     font-size: 2rem;
     padding-top: 2em;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 footer > h3 {
     font-weight: lighter;
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     padding-bottom: 2em;
+    padding-top: 0.5em;
 }
 
 /* Footer */
+
+
+@media (max-width: 950px) {
+    
+    .hero-desc {
+    padding: 0em 4em 0em 4.2em;
+    }
+}
+
+@media (max-width: 487px) {
+    
+    .hero-title {
+        padding: 0em 1em 0.2em 2.7em;
+        font-size: 1.8rem;
+    }
+    header {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 660px) {
+    main {
+        margin: 1em 2em;
+    }
+    .hero-date {
+        padding-left: 2em;
+    }
+    .hero-title {
+        padding-left: 0.8em;
+    }
+    .hero-desc {
+        padding-left: 1.7em;
+    }
+}
+
+@media (max-width: 444px ) {
+    header > p {
+        font-size: 0.8em;
+    }
+    header > a {
+        font-size: 0.9em;
+    }
+    .hero-title {
+        padding-left: 1.1em;
+    }
+}
