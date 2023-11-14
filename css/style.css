@@ -57,20 +57,19 @@ header p:hover {
 
 .blog-post-hero {
     background-image: url("../images/article-image-hero.png");
-    min-width: 100vw;
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
-    font-family: Source sans pro, sans-serif;
+    font-family: 'Source sans pro', sans-serif;
     min-height: 80vh;
     display: grid;
-    /* background-position: center bottom; */
-
 }
 
 .blog-post-container {
     padding-bottom: 2em;
-    align-self: end;
+    display: grid;
+    align-content: end;
+    justify-content: end;
 }
 
 .hero-date {
@@ -89,6 +88,7 @@ header p:hover {
     font-weight: lighter;
     padding: 0em 26em 0em 4.2em;
     margin: 0;
+
 
 }
 .read-more {
@@ -161,14 +161,14 @@ footer {
     text-align: center;
 }
 
-footer > h1{
+footer  p{
     font-size: 2rem;
     padding-top: 2em;
     padding-bottom: 0;
     margin-bottom: 0;
 }
 
-footer > h3 {
+.footer-copyright {
     font-weight: lighter;
     font-size: 1.2rem;
     padding-bottom: 2em;
