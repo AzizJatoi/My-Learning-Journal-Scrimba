@@ -57,22 +57,25 @@ header p:hover {
 
 .blog-post-hero {
     background-image: url("../images/article-image-hero.png");
-    width: 100%;
+    min-width: 100vw;
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
     font-family: Source sans pro, sans-serif;
+    min-height: 80vh;
+    display: grid;
+    /* background-position: center bottom; */
+
 }
 
 .blog-post-container {
-    padding-top: 10em;
-    padding-bottom: 3em;
+    padding-bottom: 2em;
+    align-self: end;
 }
 
 .hero-date {
-    padding: 5em 5em 0.2em 5em;
+    padding: 0em 5em 0.2em 5em;
     margin: 0;
-
 }
 
 .hero-title {
@@ -182,14 +185,20 @@ footer > h3 {
     }
 }
 
-@media (max-width: 487px) {
+@media (max-width: 597px) {
     
-    .hero-title {
-        padding: 0em 1em 0.2em 2.7em;
+    /* .hero-title {
+        padding: 0em 1em 0.2em 1em;
         font-size: 1.8rem;
-    }
+    } */
     header {
         font-size: 1rem;
+    }
+    header > p {
+        font-size: 0.8em;
+    }
+    header > a {
+        font-size: 0.9em;
     }
 }
 @media (max-width: 660px) {
@@ -207,14 +216,9 @@ footer > h3 {
     }
 }
 
-@media (max-width: 444px ) {
-    header > p {
-        font-size: 0.8em;
-    }
-    header > a {
-        font-size: 0.9em;
-    }
+/* @media (max-width: 444px ) {
+    
     .hero-title {
         padding-left: 1.1em;
     }
-}
+} */
