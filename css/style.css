@@ -67,7 +67,7 @@ header p:hover {
     background-size: cover;
     color: white;
     font-family: 'Source sans pro', sans-serif;
-    min-height: 80vh;
+    height: 350px;
     display: grid;
 }
 
